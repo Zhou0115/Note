@@ -1,0 +1,60 @@
+Selection Sort
+算法思想：
+如果有n个元素需要排序，那么首先从n个元素中找到最小的那个元素与第0位置上的元素交换，
+然后再从剩下的n个元素中找到最小的元素与第1位置上的元素交换，之后再从剩下的n-2个元素中找到最小的元素与第2位置上的元素交换，
+直到所有元素都排序好
+每一次交换都产生一个最大(最小)的值
+
+int arr[]={};
+int len=sizeof(arr)/sizeof(arr[0]);
+
+//外循环交代一共交换n-1次
+for(i=0;i<len-1;i++)
+{
+  //内循环交代从i的后面开始每个与i对比
+  for(j=i+1;j<len;j++)
+  {
+  if(arr[j]>arr[i]
+  {
+  int temp =arr[i];
+  arr[i]=arr[j];
+  arr[j]=temp;
+  }
+  }
+}
+
+//打印数组
+for(i=0;i<len;i++)
+{
+printf("%d",arr[i]);
+}
+
+
+Bubble Sort
+算法思想：
+所有相邻记录的关键字值进行比效，如果是逆顺，则将其交换，最终达到有序化
+
+int arr[]={};
+int len=sizeof(arr)/sizeof(arr[0]);
+
+//外循环交代一共交换n-1次
+for(i=0;i<len-1;i++)
+{
+  //内循环交代一次交换n-1-i次
+  for(j=i;j<len-1-i;j++)
+  {
+  //相邻对比
+  if(arr[j]<arr[j+1]
+  {
+  int temp=arr[j]
+  arr[j]=arr[j+1]
+  arr[j+1]=temp
+  }
+  }
+}
+
+//打印数组
+for(i=0;i<len;i++)
+{
+printf("%d",arr[i]);
+}
